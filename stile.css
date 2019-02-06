@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Charm|Quattrocento');
+body {
+	margin: 0;
+	padding: 0;
+	background: #362C2A;
+	color: #cdcdcd;
+	font-family: "Quattrocento", cursive;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Charm", cursive;
+	letter-spacing: 1px;
+	font-size: 2.5em;
+	color: white;
+	padding: 0;
+	margin-bottom: 0;
+	margin-top: 5%;
+}
+
+.titolo {
+	text-align: center;
+	font-family: "Charm", cursive;
+	letter-spacing: 1px;
+	font-size: 1.5em;
+	color: white;
+}
+
+#introduzione {
+	text-align: justify;
+	font-size: 1.1em;
+	width: 80%;
+	display: block;
+	margin: auto;
+	letter-spacing: 0.5px;
+	padding-bottom: 3%;
+}
+
+#wrapper h2 {
+	padding: 0.2%;
+	text-align: center;
+	font-family: "Charm", cursive;
+	letter-spacing: 1px;
+	font-size: 3em;
+	color: #663330;
+	margin-top: 0.8em;
+}
+
+img {
+	margin: 1.5%;
+	border-radius: 15px;
+	margin-left: 2%;
+}
+
+#wrapper {
+	margin: 5% 5% 4% 5%;
+	background-color: #D3BD9B;
+	border-radius: 25px;
+	color: black;
+	padding: 0 2.5% 2% 2.5%;
+	height: auto;
+	overflow: hidden;
+}
+
+#desc_fronte,
+#desc_retro {
+	float: right;
+	width: 50%;
+	height: 83.3%;
+	overflow: scroll;
+	margin-left: 3%;
+	margin-right: 3%;
+	border: 2px solid #663330;
+	border-radius: 15px;
+	background-color: white;
+	opacity: 0.9;
+	padding: 3%;
+	font-size: 1em;
+}
+
+#trascrizione_testo1,
+#trascrizione_testo2,
+#trascrizione_testo3 {
+	width: 50%;
+	float: left;
+	line-height: 35%;
+}
+
+.salute {
+	font-size: 1.3em;
+}
+
+.contenitore_fronte,
+.contenitore_retro {
+	float: left;
+	width: auto;
+	padding-bottom: 3%;
+}
+
+.contenitore_fronte img,
+.contenitore_retro img {
+	margin-left: 13%;
+	margin-top: 16.3%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
+#note {
+	float: right;
+	width: 40%;
+	margin-right: 5%;
+	font-size: 1em;
+}
+
+.bottone_fronte {
+	background-color: #663330;
+	color: white;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	padding: 3%;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #663330;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #3f1f1f;
+}
+
+
+/***************************GALLERIA**************************/
+
+* {
+	box-sizing: border-box;
+}
+
+.contenitore_cartoline {
+	position: relative;
+	margin: auto;
+	width: 100%;
+}
+
+.galleria {
+	display: none;
+	margin-left: 40%;
+	padding-top: 1%
+}
+
+.galleria img {
+	width: 30%;
+}
+
+
+/* bottoni galleria */
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 60%;
+	width: auto;
+	padding: 0.8%;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+	border-radius: 100%;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+
+/* sposta il pulsante next a destra */
+
+.next {
+	right: 35%;
+}
+
+.prev {
+	left: 35%;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: #663330;
+}
+
+.galleria_foto_piccole:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.galleria_foto_piccole {
+	float: left;
+	width: 9%;
+	margin-left: 6%;
+	margin-bottom: 3%;
+	margin-top: 2%;
+}
+
+.galleria_foto_piccole img {
+	cursor: pointer;
+	width: 100%;
+}
+
+.galleria_foto_piccole img:hover {
+	color: black;
+	opacity: 0.5;
+}
+
+hr {
+	clear: both;
+	max-width: 90%;
+	display: block;
+	margin: auto;
+}
+
+
+/***************FOOTER************/
+
+#footer {
+	clear: both;
+	margin-bottom: 5%;
+}
+
+#about h3,
+#credits h3 {
+	text-align: center;
+	font-family: "Charm", cursive;
+	letter-spacing: 1px;
+	font-size: 2.4em;
+	color: white;
+}
+
+#about {
+	width: 47%;
+	margin-left: 3%;
+	padding: 2%;
+	float: left;
+	overflow: auto;
+}
+
+#credits {
+	float: right;
+	width: 47%;
+	padding: 2%;
+	margin-right: 3%;
+	overflow: auto;
+}
+
+#about p,
+#credits p {
+	text-align: center;
+	font-size: 1em;
+	background-color: #D3BD9B;
+	border-radius: 25px;
+	height: 35%;
+	color: black;
+	padding: 5%;
+	overflow: auto;
+}
+
+
+/*****************MENU E BOTTONI**************/
+
+select {
+	background-color: white;
+	cursor: pointer;
+	margin-left: 25%;
+	margin-bottom: 2%;
+	font-family: "Quattrocento", cursive;
+	border: 2px solid #663330;
+	border-radius: 15px;
+	font-size: 0.9em;
+	padding: 0.8%;
+}
+
+button {
+	margin-left: 3%;
+	margin-bottom: 2%;
+	font-size: 0.9em;
+	padding: 0.8%;
+	border-radius: 15px;
+	font-family: "Quattrocento", cursive;
+	color: #663330;
+	background-color: white;
+	border: 2px solid #663330;
+}
+
+.bottone_fronte:hover,
+.bottone_retro:hover {
+	cursor: pointer;
+	background-color: #663330;
+	color: white;
+}
+
+.bottone_ruota a {
+	text-decoration: none;
+	font-size: 1.1em;
+	color: black;
+	font-weight: bold;
+}
+
+#divisore {
+	width: 35%;
+	display: block;
+	margin: auto;
+	padding: 2.9% 0;
+}
+
+#puntatore {
+	width: 5%;
+	margin-bottom: 1%;
+	float: left;
+}
+
+.puntatore {
+	visibility: hidden;
+}
+
+#salute_2 {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#salute_1 {
+	text-align: left;
+	font-size: 1.2em;
+}
+
+#cart_3 {
+    text-align: center;
+    font-size: 1.11em;
+}
+
+#firma_1 {
+    text-align: right;
+}
+
+#firma_2 {
+    text-align: right;
+}
+
+#firma_3 {
+    font-size: 1em;
+    padding-left: 16%;
+}
+
+#firma_1, #firma_2{
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+#hi_date {
+    text-align: right;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+#ab_193_01 {
+    margin: 10%;
+}
+
+@media screen and (max-width: 1366px) {
+	#about p,
+	#credits p {
+		font-size: 0.9em;
+		overflow: auto;
+	}
+	#desc_fronte,
+	#desc_retro {
+		overflow: auto;
+		height: 80%;
+		margin-top: 2.7%;
+		font-size: 0.9em;
+	}
+	#introduzione {
+		font-size: 1em;
+	}
+	.prev,
+	.next {
+		top: 50%;
+	}
+	.contenitore_fronte img,
+	.contenitore_retro img {
+		margin-left: 10%;
+		margin-top: 0;
+	}
+	img#Retro_6 {
+		margin-top: 0;
+	}
+	select {
+		margin-left: 50%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.contenitore_fronte img,
+	.contenitore_retro img {
+		clear: both;
+		float: none;
+		margin: 5% 21%;
+	}
+	#desc_fronte,
+	#desc_retro {
+		margin-top: 5%;
+		width: auto;
+	}
+	select {
+		margin-left: 50%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#desc_fronte,
+	#desc_retro {
+		font-size: 0.9em;
+		margin-top: 2%;
+	}
+	img#Retro_6 {
+		margin-bottom: 10%;
+		margin-top: 0;
+	}
+	img#Fronte_3 {
+		margin-bottom: 10%;
+		margin-top: 15%;
+	}
+}
