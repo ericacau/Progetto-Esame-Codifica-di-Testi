@@ -1,6 +1,6 @@
 # Progetto-Esame-Codifica-di-Testi
 
-Codifica delle cartoline 006, 007 e 193 della donazione Rosanna Borghi (2018). 
+Codifica delle cartoline 006, 007 e 193 della donazione Rosanna Borghi (2018), conservate presso il Museo civico etnografico Giovanni Podenzana.
 
 Moduli TEI utilizzati:
 - Core
