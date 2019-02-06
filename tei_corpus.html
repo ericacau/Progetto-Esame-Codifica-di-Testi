@@ -1,0 +1,512 @@
+<html xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Cartoline dalla Grande Guerra</title>
+      <meta charset="UTF-8"></meta>
+      <link rel="shortcut icon" href="immagini_sito/favicon.ico" type="image/x-icon"></link>
+      <link rel="icon" href="immagini_sito/favicon.ico" type="image/x-icon"></link>
+      <link rel="stylesheet" type="text/css" href="stile.css"></link><script type="text/javascript" src="script.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script type="text/javascript" src="scriptDescrizioni.js"></script></head>
+   <body>
+      <div class="titolo">
+         <h1>Cartoline dalla Grande Guerra</h1>
+      </div><img src="immagini_sito/divisore.png" id="divisore"></img><div id="introduzione">
+         <p>
+            In questo sito è presentata la codifica digitale di tre cartoline provenienti dal
+            <i>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei
+               cimeli garibaldini e della Prima Guerra Mondiale</i>
+            di La Spezia e si connette ad un progetto realizzato dal Laboratorio di Cultura Digitale - Università di Pisa.
+            <br></br>
+            Le tre cartoline sono state scritte nel pieno della Prima Guerra Mondiale: le prime
+            due riguardano la corrispondenza amorosa tra il militare 
+            -si ipotizza maggiore o tenente colonnello- <i><strong>Giovanni Coliola</strong></i>, e <strong><i>Oliva Turtura</i></strong> di cui è presente il nome nell’<a href="https://books.google.it/books?id=niGVVFNDkzkC">Annuario del Ministero dell’Educazione Nazionale del 1935</a>.
+            <br></br>
+            È interessante vedere come in un periodo così difficile come la <strong>Grande Guerra</strong>, le cartoline e la scrittura in generale rappresentino uno spiraglio di quotidianità,
+            in mezzo al dolore e alla nostalgia dei soldati al Fronte che, in quei rari momenti
+            di tranquillità, cercavano di mantenere un contatto con le persone care, informandole
+            e rassicurandole 
+            sulla loro salute oppure scrivendo parole d’amore alla persona amata come nel caso
+            di Oliva Turtura e Giovanni Coliola.
+            <br></br>
+            La terza cartolina invece è una cartolina di auguri da parte del cugino, probabilmente
+            di Oliva, indirizzata ad Antonietta, che si ipotizza fosse anch’essa parente della
+            sopracitata Oliva.
+            
+         </p>
+      </div>
+      <div class="contenitore_cartoline">
+         <div class="galleria"><img src="img_cartoline/7694-006F.jpg"></img></div>
+         <div class="galleria"><img src="img_cartoline/7694-006R.jpg"></img></div>
+         <div class="galleria"><img src="img_cartoline/7694-007F.jpg"></img></div>
+         <div class="galleria"><img src="img_cartoline/7694-007R.jpg"></img></div>
+         <div class="galleria"><img src="img_cartoline/7694-193F.jpg"></img></div>
+         <div class="galleria"><img src="img_cartoline/7694-193R.jpg"></img></div><a class="prev" id="indietro" onclick="gestoreAvanti(-1)">❮</a><a class="next" id="avanti" onclick="gestoreAvanti(1)">❯</a><div class="galleria_foto_piccole"><img src="img_cartoline/7694-006F.jpg" class="img_piccole" onclick="immagineCorrente(1)"></img></div>
+         <div class="galleria_foto_piccole"><img src="img_cartoline/7694-006R.jpg" class="img_piccole" onclick="immagineCorrente(2)"></img></div>
+         <div class="galleria_foto_piccole"><img src="img_cartoline/7694-007F.jpg" class="img_piccole" onclick="immagineCorrente(3)"></img></div>
+         <div class="galleria_foto_piccole"><img src="img_cartoline/7694-007R.jpg" class="img_piccole" onclick="immagineCorrente(4)"></img></div>
+         <div class="galleria_foto_piccole"><img src="img_cartoline/7694-193F.jpg" class="img_piccole" onclick="immagineCorrente(5)"></img></div>
+         <div class="galleria_foto_piccole"><img src="img_cartoline/7694-193R.jpg" class="img_piccole" onclick="immagineCorrente(6)"></img></div>
+      </div>
+      <hr></hr>
+      <div id="wrapper">
+         <h2 class="prima">Coppia di innamorati</h2>
+         <h2 class="seconda">Giulietta e Romeo</h2>
+         <h2 class="terza">La Madonna del cardellino</h2><select id="selezioneCartolina">
+            <option>Coppia di innamorati</option>
+            <option>Giulietta e Romeo</option>
+            <option>La Madonna del cardellino</option></select><button type="button" class="bottone_fronte">Fronte</button><button type="button" class="bottone_retro">Recto</button><button type="button" class="bottone_ruota"><a href="img_cartoline/7694-193R - ruotata.jpg" target="_blank">Ruota</a></button><div class="contenitore_fronte"><img src="img_cartoline/7694-006F.jpg" class="prima" id="Fronte_1"></img></div>
+         <div class="contenitore_fronte"><img src="img_cartoline/7694-007F.jpg" class="seconda" id="Fronte_2"></img></div>
+         <div class="contenitore_fronte"><img src="img_cartoline/7694-193F.jpg" class="terza" id="Fronte_3"></img></div>
+         <div class="contenitore_retro"><img src="img_cartoline/7694-006R.jpg" class="retro" id="Retro_2" usemap="#image-map1"></img><map name="image-map1" id="cartolina_facs_006_r">
+               <area id="r_intestazione6_1" class="area" coords="5,29,134,62" shape="rect" onmouseover="puntatore(r_intestazione6_1);" onmouseout="puntatore_base(r_intestazione6_1);"></area>
+               <area id="r_intestazione6_2" class="area" coords="181,27,319,40" shape="rect" onmouseover="puntatore(r_intestazione6_2);" onmouseout="puntatore_base(r_intestazione6_2);"></area>
+               <area id="r_intestazione6_3" class="area" coords="599,114,645,149" shape="rect" onmouseover="puntatore(r_intestazione6_3);" onmouseout="puntatore_base(r_intestazione6_3);"></area>
+               <area id="r_intestazione6_4" class="area" coords="683,105,748,161" shape="rect" onmouseover="puntatore(r_intestazione6_4);" onmouseout="puntatore_base(r_intestazione6_4);"></area>
+               <area id="r_intestazione6_5" class="area" coords="455,63,785,100" shape="rect" onmouseover="puntatore(r_intestazione6_5);" onmouseout="puntatore_base(r_intestazione6_5);"></area>
+               <area id="r_lettera_006_1" class="area" coords="60,98,307,186" shape="rect" onmouseover="puntatore(r_lettera_006_1);" onmouseout="puntatore_base(r_lettera_006_1);"></area>
+               <area id="r_lettera_006_2" class="area" coords="37,179,817,273" shape="rect" onmouseover="puntatore(r_lettera_006_2);" onmouseout="puntatore_base(r_lettera_006_2);"></area>
+               <area id="r_lettera_006_3" class="area" coords="31,272,826,351" shape="rect" onmouseover="puntatore(r_lettera_006_3);" onmouseout="puntatore_base(r_lettera_006_3);"></area>
+               <area id="r_lettera_006_4" class="area" coords="33,357,778,407" shape="rect" onmouseover="puntatore(r_lettera_006_4);" onmouseout="puntatore_base(r_lettera_006_4);"></area>
+               <area id="r_lettera_006_5" class="area" coords="32,425,817,517" shape="rect" onmouseover="puntatore(r_lettera_006_5);" onmouseout="puntatore_base(r_lettera_006_5);"></area>
+               <area id="r_lettera_006_6" class="area" coords="36,517,825,585" shape="rect" onmouseover="puntatore(r_lettera_006_6);" onmouseout="puntatore_base(r_lettera_006_6);"></area>
+               <area id="r_lettera_006_7" class="area" coords="59,568,599,627" shape="rect" onmouseover="puntatore(r_lettera_006_7);" onmouseout="puntatore_base(r_lettera_006_7);"></area>
+               <area id="r_intestazione6_7" class="area" coords="22,750,358,794" shape="rect" onmouseover="puntatore(r_intestazione6_7);" onmouseout="puntatore_base(r_intestazione6_7);"></area>
+               <area id="r_intestazione6_8" class="area" coords="729,753,997,791" shape="rect" onmouseover="puntatore(r_intestazione6_8);" onmouseout="puntatore_base(r_intestazione6_8);"></area>
+               <area id="r_lettera_006_8" class="area" coords="14,630,769,695" shape="rect" onmouseover="puntatore(r_lettera_006_8);" onmouseout="puntatore_base(r_lettera_006_8);"></area>
+               <area id="r_lettera_006_9" class="area" coords="32,699,801,785" shape="rect" onmouseover="puntatore(r_lettera_006_9);" onmouseout="puntatore_base(r_lettera_006_9);"></area>
+               <area id="r_lettera_006_10" class="area" coords="42,793,760,883" shape="rect" onmouseover="puntatore(r_lettera_006_10);" onmouseout="puntatore_base(r_lettera_006_10);"></area>
+               <area id="r_lettera_006_11" class="area" coords="49,896,806,999" shape="rect" onmouseover="puntatore(r_lettera_006_11);" onmouseout="puntatore_base(r_lettera_006_11);"></area>
+               <area id="r_lettera_006_12" class="area" coords="33,1002,774,1088" shape="rect" onmouseover="puntatore(r_lettera_006_12);" onmouseout="puntatore_base(r_lettera_006_12);"></area>
+               <area id="r_lettera_006_13" class="area" coords="28,1094,804,1171" shape="rect" onmouseover="puntatore(r_lettera_006_13);" onmouseout="puntatore_base(r_lettera_006_13);"></area>
+               <area id="r_lettera_006_14" class="area" coords="20,1162,252,1218" shape="rect" onmouseover="puntatore(r_lettera_006_14);" onmouseout="puntatore_base(r_lettera_006_14);"></area>
+               <area id="r_lettera_006_15" class="area" coords="263,1153,763,1249" shape="rect" onmouseover="puntatore(r_lettera_006_15);" onmouseout="puntatore_base(r_lettera_006_15);"></area></map></div>
+         <div class="contenitore_retro"><img src="img_cartoline/7694-007R.jpg" class="retro" id="Retro_4" usemap="#image-map2"></img><map name="image-map2" id="cartolina_facs_007_r">
+               <area id="r_lettera_007_01" class="area" coords="505,7,728,85" shape="rect" onmouseover="puntatore(r_lettera_007_01);" onmouseout="puntatore_base(r_lettera_007_01);"></area>
+               <area id="r_lettera_007_02" class="area" coords="218,8,458,99" shape="rect" onmouseover="puntatore(r_lettera_007_02);" onmouseout="puntatore_base(r_lettera_007_02);"></area>
+               <area id="r_lettera_007_03" class="area" coords="19,71,818,180" shape="rect" onmouseover="puntatore(r_lettera_007_03);" onmouseout="puntatore_base(r_lettera_007_03);"></area>
+               <area id="r_lettera_007_04" class="area" coords="45,189,801,284" shape="rect" onmouseover="puntatore(r_lettera_007_04);" onmouseout="puntatore_base(r_lettera_007_04);"></area>
+               <area id="r_lettera_007_05" class="area" coords="25,277,791,342" shape="rect" onmouseover="puntatore(r_lettera_007_05);" onmouseout="puntatore_base(r_lettera_007_05);"></area>
+               <area id="r_lettera_007_06" class="area" coords="13,347,799,412" shape="rect" onmouseover="puntatore(r_lettera_007_06);" onmouseout="puntatore_base(r_lettera_007_06);"></area>
+               <area id="r_lettera_007_07" class="area" coords="11,425,697,480" shape="rect" onmouseover="puntatore(r_lettera_007_07);" onmouseout="puntatore_base(r_lettera_007_07);"></area>
+               <area id="r_lettera_007_08" class="area" coords="7,477,738,547" shape="rect" onmouseover="puntatore(r_lettera_007_08);" onmouseout="puntatore_base(r_lettera_007_08);"></area>
+               <area id="r_lettera_007_09" class="area" coords="67,554,821,609" shape="rect" onmouseover="puntatore(r_lettera_007_09);" onmouseout="puntatore_base(r_lettera_007_09);"></area>
+               <area id="r_lettera_007_10" class="area" coords="6,607,820,683" shape="rect" onmouseover="puntatore(r_lettera_007_10);" onmouseout="puntatore_base(r_lettera_007_10);"></area>
+               <area id="r_lettera_007_11" class="area" coords="13,661,766,746" shape="rect" onmouseover="puntatore(r_lettera_007_11);" onmouseout="puntatore_base(r_lettera_007_11);"></area>
+               <area id="r_lettera_007_12" class="area" coords="30,756,821,820" shape="rect" onmouseover="puntatore(r_lettera_007_12);" onmouseout="puntatore_base(r_lettera_007_12);"></area>
+               <area id="r_lettera_007_13" class="area" coords="7,827,808,895" shape="rect" onmouseover="puntatore(r_lettera_007_13);" onmouseout="puntatore_base(r_lettera_007_13);"></area>
+               <area id="r_lettera_007_14" class="area" coords="23,899,763,956" shape="rect" onmouseover="puntatore(r_lettera_007_14);" onmouseout="puntatore_base(r_lettera_007_14);"></area>
+               <area id="r_lettera_007_15" class="area" coords="12,961,803,1039" shape="rect" onmouseover="puntatore(r_lettera_007_15);" onmouseout="puntatore_base(r_lettera_007_15);"></area>
+               <area id="r_lettera_007_16" class="area" coords="8,1032,783,1090" shape="rect" onmouseover="puntatore(r_lettera_007_16);" onmouseout="puntatore_base(r_lettera_007_16);"></area>
+               <area id="r_lettera_007_17" class="area" coords="2,1097,805,1178" shape="rect" onmouseover="puntatore(r_lettera_007_17);" onmouseout="puntatore_base(r_lettera_007_17);"></area>
+               <area id="r_lettera_007_18" class="area" coords="7,1162,793,1217" shape="rect" onmouseover="puntatore(r_lettera_007_18);" onmouseout="puntatore_base(r_lettera_007_18);"></area>
+               <area id="r_lettera_007_19" class="area" coords="23,1205,575,1265" shape="rect" onmouseover="puntatore(r_lettera_007_19);" onmouseout="puntatore_base(r_lettera_007_19);"></area>
+               <area id="r_lettera_007_20" class="area" coords="586,1209,826,1280" shape="rect" onmouseover="puntatore(r_lettera_007_20);" onmouseout="puntatore_base(r_lettera_007_20);"></area>
+               <area id="r_intestazione7_1" class="area" coords="10,42,396,145" shape="rect" onmouseover="puntatore(r_intestazione7_1);" onmouseout="puntatore_base(r_intestazione7_1);"></area>
+               <area id="r_intestazione7_2" class="area" coords="325,130,513,199" shape="rect" onmouseover="puntatore(r_intestazione7_2);" onmouseout="puntatore_base(r_intestazione7_2);"></area>
+               <area id="r_intestazione7_3" class="area" coords="475,57,807,87" shape="rect" onmouseover="puntatore(r_intestazione7_3);" onmouseout="puntatore_base(r_intestazione7_3);"></area>
+               <area id="r_intestazione7_4" class="area" coords="610,97,658,135" shape="rect" onmouseover="puntatore(r_intestazione7_4);" onmouseout="puntatore_base(r_intestazione7_4);"></area>
+               <area id="r_intestazione7_5" class="area" coords="720,456,802,528" shape="rect" onmouseover="puntatore(r_intestazione7_5);" onmouseout="puntatore_base(r_intestazione7_5);"></area>
+               <area id="r_intestazione7_6" class="area" coords="19,570,819,610" shape="rect" onmouseover="puntatore(r_intestazione7_6);" onmouseout="puntatore_base(r_intestazione7_6);"></area></map></div>
+         <div class="contenitore_retro"><img src="img_cartoline/7694-193R.jpg" class="retro" id="Retro_6" usemap="#image-map3"></img><map name="image-map3" id="cartolina_facs_193_r">
+               <area id="r_cartolina_193_1" class="area" coords="12,769,121,1192" shape="rect" onmouseover="puntatore(r_cartolina_193_1);" onmouseout="puntatore_base(r_cartolina_193_1);"></area>
+               <area id="r_cartolina_193_2" class="area" coords="42,398,150,505" shape="rect" onmouseover="puntatore(r_cartolina_193_2);" onmouseout="puntatore_base(r_cartolina_193_2);"></area>
+               <area id="h_cartolina_193_1" class="area" coords="18,43,277,332" shape="rect" onmouseover="puntatore(h_cartolina_193_1);" onmouseout="puntatore_base(h_cartolina_193_1);"></area>
+               <area id="h_cartolina_193_2" class="area" coords="57,49,297,281" shape="rect" onmouseover="puntatore(h_cartolina_193_2);" onmouseout="puntatore_base(h_cartolina_193_2);"></area>
+               <area id="h_cartolina_193_3" class="area" coords=",,," shape="rect" onmouseover="puntatore(h_cartolina_193_3);" onmouseout="puntatore_base(h_cartolina_193_3);"></area>
+               <area id="h_cartolina_193_4" class="area" coords="505,719,816,1015" shape="rect" onmouseover="puntatore(h_cartolina_193_4);" onmouseout="puntatore_base(h_cartolina_193_4);"></area>
+               <area id="r_cartolina_193_3" class="area" coords="126,725,342,1246" shape="rect" onmouseover="puntatore(r_cartolina_193_3);" onmouseout="puntatore_base(r_cartolina_193_3);"></area>
+               <area id="r_cartolina_193_4" class="area" coords="342,707,426,1201" shape="rect" onmouseover="puntatore(r_cartolina_193_4);" onmouseout="puntatore_base(r_cartolina_193_4);"></area>
+               <area id="r_cartolina_193_5" class="area" coords="438,700,550,1075" shape="rect" onmouseover="puntatore(r_cartolina_193_5);" onmouseout="puntatore_base(r_cartolina_193_5);"></area>
+               <area id="r_cartolina_193_6" class="area" coords="313,28,441,640" shape="rect" onmouseover="puntatore(r_cartolina_193_6);" onmouseout="puntatore_base(r_cartolina_193_6);"></area>
+               <area id="r_cartolina_193_7" class="area" coords="400,46,565,673" shape="rect" onmouseover="puntatore(r_cartolina_193_7);" onmouseout="puntatore_base(r_cartolina_193_7);"></area>
+               <area id="r_cartolina_193_8" class="area" coords="532,148,646,667" shape="rect" onmouseover="puntatore(r_cartolina_193_8);" onmouseout="puntatore_base(r_cartolina_193_8);"></area>
+               <area id="r_cartolina_193_9" class="area" coords="666,55,808,500" shape="rect" onmouseover="puntatore(r_cartolina_193_9);" onmouseout="puntatore_base(r_cartolina_193_9);"></area></map></div>
+         <div id="desc_fronte">
+            <p class="prima"><strong>Editore cartolina: </strong>"Cromogliptica" A.Marzi (Roma)
+               
+            </p>
+            <p class="seconda"><strong>Editore cartolina: </strong>"Cromogliptica" A.Marzi (Roma)
+               
+            </p>
+            <p class="terza"><strong>Editore cartolina: </strong>Alfieri Lacroix, Milano - Editori (Milano)
+               
+            </p>
+            <p class="prima"><strong>Descrizione: </strong>In primo piano il bacio furtivo tra due innamorati davanti ad un
+               muro ricoperto d'edera. A destra, in secondo piano, un palazzo
+               signorile.<br></br><strong>Note riguardo la cartolina: </strong>Nella parte inferiore è
+               presente la scritta D[OMENICO] MASTROIANNI
+               ROME
+               
+            </p>
+            <p class="seconda"><strong>Descrizione: </strong>In primo piano il bacio tra Giulietta e Romeo seduti su una
+               balaustra. Sul fondo il giardino di una residenza nobiliare<br></br><strong>Note riguardo la cartolina: </strong>Nella parte inferiore è presente la scritta
+               
+               D[OMENICO] 
+               MASTROIANNI
+               
+               
+               RO[ME]
+               
+               
+            </p>
+            <p class="terza"><strong>Descrizione: </strong>Cartolina raffigurante la Madonna del Cardellino di Raffaello (1506).
+               Immersi in un prato si trovano la Madonna seduta su una roccia al centro, che
+               abbraccia affettuosamente San Giovannino, il quale porge a Gesù un
+               cardellino, simbolo della Passione.<br></br><strong>Note riguardo la cartolina: </strong>
+               La cartolina è danneggiata nella parte superiore. Non è visibile parte
+               del volto della Madonna e la parte superiore del paesaggio.
+               
+            </p>
+            <p class="prima"><strong>Altezza: </strong>9 cm 
+               <br></br><strong>Larghezza: </strong>14 cm 
+               <br></br><strong>Stato di conservazione: </strong>Buono
+            </p>
+            <p class="seconda"><strong>Altezza: </strong>9 cm 
+               <br></br><strong>Larghezza: </strong>14 cm 
+               <br></br><strong>Stato di conservazione: </strong>Buono
+            </p>
+            <p class="terza"><strong>Altezza: </strong>9 cm 
+               <br></br><strong>Larghezza: </strong>14 cm 
+               <br></br><strong>Stato di conservazione: </strong>Mediocre
+            </p>
+            <p class="prima"><strong>Numero di inventario: </strong>7694-006_001/002
+            </p>
+            <p class="seconda"><strong>Numero di inventario: </strong>7694-007_001/002
+            </p>
+            <p class="terza"><strong>Numero di inventario: </strong>7694-193_001/002
+            </p>
+            <p class="prima"><strong>Lingua usata per il testo della cartolina: </strong><br></br>
+               ≫Italiano del Novecento<br></br>
+               ≫Francese 
+               (lingua utilizzata per il titolo alternativo della cartolina nel recto)
+               
+            </p>
+            <p class="seconda"><strong>Lingua usata per il testo della cartolina: </strong><br></br>
+               ≫Italiano del Novecento<br></br>
+               ≫Francese
+               (lingua utilizzata per il titolo alternativo della cartolina del recto)
+               
+            </p>
+            <p class="terza"><strong>Lingua usata per il testo della cartolina: </strong><br></br>
+               ≫Italiano del Novecento
+            </p>
+            <p class="prima"><strong>Mittente: </strong>
+               Giovanni
+               Coliola 
+               <br></br><strong>Destinatario: </strong>
+               Oliva
+               Turtura
+               
+            </p>
+            <p class="seconda"><strong>Mittente: </strong>
+               Giovanni
+               Coliola 
+               <br></br><strong>Destinatario: </strong>
+               Oliva
+               Turtura
+               
+            </p>
+            <p class="terza"><strong>Mittente: </strong>
+               Giuseppe
+               Turtura
+               <br></br><strong>Destinatario: </strong>
+               Antonietta
+               Turtura
+               
+            </p>
+            <p class="prima"><strong>Data di invio della cartolina: </strong>2 dicembre 1916
+            </p>
+            <p class="seconda"><strong>Data di invio della cartolina: </strong>27 gennaio 1918
+            </p>
+         </div>
+         <div id="desc_retro">
+            <div id="trascrizione_testo1">
+               
+               
+               
+               
+               <br></br><p id="r_lettera_006_1" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+               
+               <p id="salute_1"><i>
+                     Oliva, </i></p>
+               
+               
+               <p id="ab_6_01">
+                  
+                  <br></br><p id="r_lettera_006_2" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>Lo sai che t'amo tanto, tan- 
+                  <br></br><p id="r_lettera_006_3" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>to ebbene l'amor mio non 
+                  <br></br><p id="r_lettera_006_4" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>muore più; tanto che la 
+                  <br></br><p id="r_lettera_006_5" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>mia Oliva mi saprà inspi- 
+                  <br></br><p id="r_lettera_006_6" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>rare tante cose <u>belle</u> e buone
+                  <br></br><p id="r_lettera_006_7" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>saprà darmi tante 
+                  <br></br><p id="r_lettera_006_8" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>belle consolazioni ed un 
+                  <br></br><p id="r_lettera_006_9" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>affetto grande, smisurato, 
+                  <br></br><p id="r_lettera_006_10" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>infinito, puro, eterno 
+                  <br></br><p id="r_lettera_006_11" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>che ci eleverà sulla commu-
+                  <br></br><p id="r_lettera_006_12" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>ne mediocrità degli uo- 
+                  <br></br><p id="r_lettera_006_13" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>mini, nel silenzio dei nostri 
+                  <br></br><p id="r_lettera_006_14" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>cuori: 
+                  
+               </p>
+               
+               
+               <p><i>
+                     <br></br><p id="r_lettera_006_15" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+                     
+                     
+                     <p id="firma_1">
+                        <u>Giovannino</u>
+                        
+                     </p>
+                     
+                     </i></p>
+               
+            </div>
+            <div id="trascrizione_testo2">
+               
+               <br></br><p id="r_lettera_007_01" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+               
+               
+               
+               <p id="hi_date">li, 2/12/1916.</p>
+               
+               
+               
+               <br></br><p id="r_lettera_007_02" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+               
+               <p id="salute_2"><i>
+                     
+                     Oliva,
+                     </i></p>
+               
+               
+               
+               
+               
+               <br></br><p id="r_lettera_007_03" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>È un desiderio? È un martirio?
+               
+               
+               
+               <br></br><p id="r_lettera_007_04" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>Quando, quando potrò confon-
+               <br></br><p id="r_lettera_007_05" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>dere i miei sospiri d'amore con 
+               <br></br><p id="r_lettera_007_06" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>i tuoi? quando 
+               [...]
+                
+               
+               <br></br><p id="r_lettera_007_07" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>questi affanni? e come?
+               
+               
+               <br></br><p id="r_lettera_007_08" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>Sarai tu la mia buona
+               <br></br><p id="r_lettera_007_09" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>consolatrice? perché l'animo
+               
+               
+               <br></br><p id="r_lettera_007_10" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>mio ha bisogno di un solo con-
+               <br></br><p id="r_lettera_007_11" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>forto: il tuo. Ho bisogno
+               <br></br><p id="r_lettera_007_12" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>d'un cuore che sappia elevarmi
+               <br></br><p id="r_lettera_007_13" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>sino all'ideale più puro, col 
+               <br></br><p id="r_lettera_007_14" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>concorso leale di quello mi 
+               <br></br><p id="r_lettera_007_15" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>sento capace di scuotere, di dis- 
+               <br></br><p id="r_lettera_007_16" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>sipare le grette insidie..... 
+               <br></br><p id="r_lettera_007_17" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>io solo potrei cadere nell'abbie- 
+               <br></br><p id="r_lettera_007_18" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>zione. Amami, come io su-
+               <br></br><p id="r_lettera_007_19" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>blimamente t'amo. 
+               
+               
+               
+               
+               
+               <p><i>
+                     <br></br><p id="r_lettera_007_20" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+                     
+                     
+                     <p id="firma_2">
+                        
+                         <u>Giov[annino]</u>
+                        
+                        
+                        
+                     </p>
+                     
+                     </i></p>
+               
+            </div>
+            <div id="trascrizione_testo3">
+               
+               <br></br><p id="r_cartolina_193_1" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+               
+               [...]
+               
+               27-1-918
+               
+               
+               <p id="ab_193_01">
+                  
+                  <address id="cart_3">
+                     <br></br><p id="r_cartolina_193_6" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+                     Distinta Signorina
+                     
+                     <br></br><p id="r_cartolina_193_7" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+                     
+                     Antonietta Turtura
+                     
+                     
+                     <br></br><p id="r_cartolina_193_8" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+                     Via Girolamo Rossi 58
+                     
+                     <br></br><p id="r_cartolina_193_9" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+                     
+                      <u>Ravenna</u> 
+                     
+                     
+                     
+                  </address>
+                  
+               </p>
+               
+               
+               
+               
+               <br></br><p id="r_cartolina_193_3" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p> Saluti affettuosi 
+               <br></br><p id="r_cartolina_193_4" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p> a voi e famiglia 
+               
+               
+               
+               <p><i>
+                     <br></br><p id="r_cartolina_193_5" class="puntatore"><img src="immagini_sito/puntatore.png" id="puntatore"></img></p>
+                     
+                     
+                     <p id="firma_3">
+                        <i>cugino Giuseppe</i>
+                        
+                     </p>
+                     
+                     </i></p>
+               
+               
+            </div>
+            <div id="note">
+               <p class="prima"><strong>Note riguardo la cartolina: </strong>
+                  Nell'angolo in alto a destra della parte superiore della
+                  cartolina è presente un 6, numero di inventario della cartolina, aggiunto dal catalogatore
+                  
+                  
+               </p>
+               <p class="seconda"><strong>Note riguardo la cartolina: </strong>
+                  Nell'angolo in alto a destra della parte superiore della
+                  cartolina è presente un 7, numero di inventario della cartolina, aggiunto dal catalogatore
+                  
+                  
+               </p>
+               <p class="terza"><strong>Note riguardo la cartolina: </strong>
+                  Nell'angolo in alto a destra della parte superiore della
+                  cartolina è presente un 193, numero di inventario della cartolina, aggiunto dal catalogatore.
+                  
+               </p>
+               <p class="timbri_francobolli"><strong>
+                     Francobollo:
+                     </strong>
+                  Francobollo del Regno d'Italia da 5 centesimi delle Poste
+                  Italiane con il volto di profilo di Vittorio Emanuele III
+                  
+               </p>
+               <p class="timbri_francobolli"><strong>
+                     Timbro:
+                     </strong>
+                  POSTA MILITARE 
+                  [...]
+                  
+                  3° ARMATA 
+                  27.1.18
+                  
+                  <p class="timbri_francobolli"><strong>Nota: </strong> Timbro di partenza al di sopra del francobollo nell'angolo in
+                     alto a destra, quasi del tutto leggibile, ad eccezione della
+                     parte inferiore, che risulta invece scolorita. 
+                  </p>
+                  
+               </p>
+               <p class="timbri_francobolli"><strong>
+                     Timbro:
+                     </strong>
+                   SEZIONE PANET
+                  [...]
+                  
+                  
+                  
+                  <p class="timbri_francobolli"><strong>Nota: </strong> Timbro di arrivo in basso a sinistra. Risulta fortemente
+                     scolorito e in gran parte illeggibile. 
+                  </p>
+                  
+               </p>
+               <p class="timbri_francobolli"><strong>
+                     Timbro:
+                     </strong>
+                   VERIFICATO PER CENSURA 
+                  
+                  <p class="timbri_francobolli"><strong>Nota: </strong> Timbro apposto in diagonale nella parte
+                     centrale della cartolina parzialmente scolorito nella parte
+                     inferiore ma leggibile. La censura postale venne istituita il 23
+                     maggio 1915, il giorno prima dell'entrata in guerra contro
+                     l'Austria-Ungheria. Essa prevedeva di non poter inviare
+                     cartoline illustrate con paesaggi o panorami di città, oltre al
+                     non poter usare sistemi criptati di comunicazione. 
+                  </p>
+                  
+               </p>
+               <p class="prima"><strong>Stampe presenti nella cartolina: </strong> Sculture MASTROIANNI Roma Edizione propria N.46  "Cromogliptica" A. Marzi - Roma  AM  6 Bacio furtivoBaiser furtif
+               </p>
+               <p class="seconda"><strong>Stampe presenti nella cartolina: </strong>
+                  Sculture MASTROIANNI Roma Edizione
+                  propria N.8 
+                  "Cromogliptica" A. Marzi - Roma 
+                  AM 
+                  7 
+                  Giulietta e Romeo  Juliette et
+                  Roméo 
+               </p>
+               <p class="terza"><strong>Stampe presenti nella cartolina: </strong>193
+                  Alfieri &amp; Lacroix, Milano - Editori - Propr. riservata. 
+                  Nr.1504 - RAFFAELLO SANZIO - La Madonna del cardellino.
+                  Firenze, 
+                  R
+                  Gallerre degli Uffizi.
+                  
+               </p>
+            </div>
+         </div>
+      </div><img src="immagini_sito/divisore.png" id="divisore"></img><div id="footer">
+         <div id="about">
+            <h3>About</h3>
+            <p>
+               Trascrizione a cura di:
+               Erica Cau (matr. 545126)
+               Alice Isola (matr. 545007)
+               <br></br>
+               Il progetto è stato relizzato per l'esame di <strong>Codifica di Testi</strong> del professore Angelo Mario del Grosso (a.a 2018-2019)
+               <br></br>
+               Il seguente progetto fa parte di un progetto più ampio avviato dal Laboratorio di Cultura Digitale - Università di Pisa<br></br>
+               © 
+               Available under licence only
+               
+            </p>
+         </div>
+         <div id="credits">
+            <h3>Credits</h3>
+            <p>
+               Compilatore:
+               Tommaso Castagneto
+               <br></br>
+               Responsabile scientifico:
+               Giacomo Paolicchi
+               Enrica Salvatori
+               <br></br>
+               Funzionario responsabile:
+               Marzia Ratti
+               <br></br>
+               Le cartoline sono conservate presso il <i>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei
+                  cimeli garibaldini e della Prima Guerra Mondiale</i>
+               (La Spezia)    
+               
+            </p>
+         </div>
+      </div>
+   </body>
+</html>
